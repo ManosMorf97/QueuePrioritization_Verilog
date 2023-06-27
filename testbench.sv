@@ -46,7 +46,7 @@ module testbench;
       #0.5New_R=1'b0;
      #0.6$display("Done=%b Total_Clients=%b Current_Client=%b",Done_W,Total_Clients_W,Current_Client_W);
     end
-	$display("All are served");
+	$display("All are served.\nNow we will reset the system");
     Reset_R=1'b1;
     #0.5$display("New=%b Total_Clients=%b Current_Client=%b",New_W,Total_Clients_W,Current_Client_W);
     $finish;
